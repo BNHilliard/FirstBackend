@@ -8,6 +8,11 @@ server.get('/', (req, res) => {
     res.send('Hello, world!');
 });
 
+server.get('/JABBERWOCKY', (req, res) => {
+    res.send(`<h1>FRABJOUS<h1><p>${process.env.JABBERWOCKY}</p>`)
+});
+
+
 server.post('/', (req, res) => {
     res.json(req.body);
 });
