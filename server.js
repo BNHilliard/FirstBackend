@@ -2,14 +2,14 @@ const express = require('express')
 
 const server = express();
 
-server.use(express.json())
+server.use(express.json());
 
 server.get('/', (req, res) => {
     res.send('Hello, world!');
 });
 
 server.get('/jabberwocky', (req, res) => {
-    res.send(`<h1>FRABJOUS<h1><p>${process.env.JABBERWOCKY}</p>`)
+    res.send(`<h1>FRABJOUS<h1><p>${process.env.JABBERWOCKY}</p>`);
 });
 
 
