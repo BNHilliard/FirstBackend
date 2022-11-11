@@ -1,4 +1,7 @@
-require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config();
+
+//require('dotenv').config()
 
 const server = require('./server');
 
