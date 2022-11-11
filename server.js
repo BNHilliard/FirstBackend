@@ -9,7 +9,7 @@ server.get('/', (req, res) => {
 });
 
 server.get('/jabberwocky', (req, res) => {
-    res.send(`<h1>FRABJOUS<h1><p>${process.env.JABBERWOCKY}</p>`);
+    res.send('<h1>FRABJOUS<h1>');
 });
 
 
